@@ -1,4 +1,6 @@
 const router = require('koa-router')()
+router.prefix('/api')
+
 const axios = require('axios')
 
 function getSongs(keywords, limit, page) {

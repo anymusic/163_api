@@ -1,4 +1,5 @@
 const router = require('koa-router')()
+router.prefix('/api')
 
 const {
   createWebAPIRequest,
