@@ -36,7 +36,7 @@ $ PORT=4444 npm run prd
 ```
 
 - `:platform` 可填 `163`，`xiami` 或者 `qq`，分别对应 网易云音乐，虾米以及 QQ 音乐
-- `keyword` 填写关键字（必填）
+- `keywords` 填写关键字（必填）
 - `page` 表示分页（选填，默认 1）
 - `limit` 表示每页数据（选填，默认 20，由于第三方服务器对该请求有限制，建议使用默认值）
 
@@ -80,10 +80,10 @@ http://localhost:3333/api/qq/search?keywords=林俊杰&page=1
   - `songs` 为歌曲信息
     - `id` 为歌曲 id，用于下个 api 请求歌曲试听链接
     - `name` 为歌曲名
-    - `album` 为歌曲所属专辑
+    - `album` 为歌曲所属专辑或其出处
     - `artist` 为该歌曲歌手
     - `platform` 为该歌曲所在平台（`163`，`xiami` 或者 `qq`）
-  - `total` 为根据关键字搜索的总数
+  - `total` 为根据关键字所搜索结果的总数
   - `limit` 同请求时定义
   - `page` 同请求时定义
 
@@ -96,7 +96,7 @@ http://localhost:3333/api/qq/search?keywords=林俊杰&page=1
 ```
 
 - `:platform` 同上
-- `:id` 为根据关键字搜索结果中的 id
+- `:id` 为歌曲 id，即根据关键字搜索结果中的 id
 
 举例：
 
