@@ -25,7 +25,7 @@ const handler = async (ctx, next) => {
 };
 
 app.use(handler)
-// app.use(cors())
+app.use(cors())
 
 // error handler
 onerror(app)
